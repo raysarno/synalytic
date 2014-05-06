@@ -18,7 +18,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Acento Media Buy Tracking System</title>
+		<title>Media Buy Tracking System</title>
 
 		<link href="styles/ametrix-jqui-theme/jquery-ui-1.10.3.custom.css" rel="stylesheet">
 		<link rel="stylesheet" href="styles/style.css" />
@@ -40,7 +40,7 @@
 		<header>
         	<div id="titleBar">
                 <img src="../images/logos/acento.png">
-                <h1>Acento Media Buy Tracking System</h1>
+                <h1>Media Buy Tracking System</h1>
                 
                 <div id="topMenu">
                 	<a class="logOut" href="logout.php">Log out</a>

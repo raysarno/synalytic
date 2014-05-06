@@ -30,58 +30,58 @@ function importLog($stepIndex, $stepStatus = 4, $stepValue = -1, $stepText = "")
 	//PART 1 OF 3: BUILD $stepText
 	switch ($stepIndex) {
 		case 1:
-			if ($stepStatus == 4) {$stepText = "Ametrix Data Import Session initialized successfully. Import Session ID " . $stepValue;}
-			else if ($stepStatus == 2) {$stepText = "Failed to initialize Ametrix Data Import Session.";}
+			if ($stepStatus == 4) {$stepText = "Data Import Session initialized successfully. Import Session ID " . $stepValue;}
+			else if ($stepStatus == 2) {$stepText = "Failed to initialize Data Import Session.";}
 		break;
 		case 2:
 			if ($stepStatus == 4) {$stepText = "Source Data File uploaded and saved successfully.";}
 			else if ($stepStatus == 2) {$stepText = "Failed to save Source Data File.";}
 		break;
 		case 3:
-			if ($stepStatus == 4) {$stepText = "Ametrix Universal Data Processor initialized successfully.";}
-			else if ($stepStatus == 2) {$stepText = "Failed to initialize Ametrix Universal Data Processor.";}
+			if ($stepStatus == 4) {$stepText = "Universal Data Processor initialized successfully.";}
+			else if ($stepStatus == 2) {$stepText = "Failed to initialize Universal Data Processor.";}
 		break;
 		case 4:
 			if ($stepStatus == 4) {$stepText = "Data Verification Success: Source Data File contains expected number of columns (" . $stepValue . ").";}
 			else if ($stepStatus == 2) {$stepText = "Data Verification Fail: Source Data File contains unexpected number of columns. Check Source Data.";}
 		break;
 		case 5:
-			if ($stepStatus == 4) {$stepText = "Connection to Ametrix Database established successfully.";}
-			else if ($stepStatus == 2) {$stepText = "Failed to connect to Ametrix Database.";}
+			if ($stepStatus == 4) {$stepText = "Connection to Database established successfully.";}
+			else if ($stepStatus == 2) {$stepText = "Failed to connect to Database.";}
 		break;
 		case 6:
-			if ($stepStatus == 1) {$stepText = "Analyzing Source Data and converting to Ametrix format: " . $stepValue . "%";}
+			if ($stepStatus == 1) {$stepText = "Analyzing Source Data and converting to valid format: " . $stepValue . "%";}
 			else if ($stepStatus == 3) {$stepText = "Warning: There is a problem in the Source Data at row " . $stepValue . " " . $stepText;}
-			else if ($stepStatus == 4) {$stepText = "Source Data converted to Ametrix format successfully.";}
+			else if ($stepStatus == 4) {$stepText = "Source Data converted to valid format successfully.";}
 			else if ($stepStatus == 5) {$stepText = $stepText . $stepValue;}
-			else if ($stepStatus == 2) {$stepText = "Error Converting Source Data to Ametrix Format. " . $stepText;}
-			else if ($stepStatus == 93) {$stepText = "Import Session Aborted: Warning Limit Exceeded while Converting Data to Ametrix Format.";}
+			else if ($stepStatus == 2) {$stepText = "Error Converting Source Data to valid Format. " . $stepText;}
+			else if ($stepStatus == 93) {$stepText = "Import Session Aborted: Warning Limit Exceeded while Converting Data to valid Format.";}
 		break;
 		case 7:
 			if ($stepStatus == 4) {$stepText = "Data Verification Success: Converted Data contains expected number of rows.";}
 			else if ($stepStatus == 2) {$stepText = "Data Verification Fail: Converted Data contains unexpected number of rows.";}
 		break;
 		case 8:
-			if ($stepStatus == 1) {$stepText = "Ametrix Duplicate Data Protection: Checking Converted Data against existing Ametrix Data: " . $stepValue . "%";}
-			else if ($stepStatus == 4) {$stepText = "Ametrix Duplicate Data Protection Complete.";}
+			if ($stepStatus == 1) {$stepText = "Duplicate Data Protection: Checking Converted Data against existing Data: " . $stepValue . "%";}
+			else if ($stepStatus == 4) {$stepText = "Duplicate Data Protection Complete.";}
 			else if ($stepStatus == 5) {$stepText = $stepText . $stepValue;}
 			else if ($stepStatus == 7) {$stepText = "Server Timeout Protection Alert: Jumping Scripts.";}
 			else if ($stepStatus == 2) {$stepText = "There was an error during the Duplicate Protection Check. " . $stepText;}
 		break;
 		case 9:
-			if ($stepStatus == 1) {$stepText = "Beginning Ametrix Final Row Count Verficition.";}
+			if ($stepStatus == 1) {$stepText = "Beginning Final Row Count Verficition.";}
 			else if ($stepStatus == 4) {$stepText = "Final Row Count Verification Success.";}
 			else if ($stepStatus == 5) {$stepText = $stepText . $stepValue;}
 			else if ($stepStatus == 2) {$stepText = "Final Row Count Verification Fail: Unexpected number of Rows.";}
 		break;
 		case 10:
-			if ($stepStatus == 4) {$stepText = "Ametrix Data Import Session Completed Successfully.";}
+			if ($stepStatus == 4) {$stepText = "Data Import Session Completed Successfully.";}
 			else if ($stepStatus == 5) {$stepText = $stepText . $stepValue;}
-			else if ($stepStatus == 2) {$stepText = "Error during Ametrix Data Import Session Wrap-Up.";}
+			else if ($stepStatus == 2) {$stepText = "Error during Data Import Session Wrap-Up.";}
 		break;
 		case 99: //ABORTED!
-			if ($stepStatus == 4) {$stepText = "Ametrix Data Import Session Aborted Successfully at Step " . $stepValue . ".";} //stepValue = step Index reached before abort
-			else if ($stepStatus == 2) {$stepText = "There was an error trying to Abort this Ametrix Data Import Session.  There may be extraneous data in the Ametrix Database.";}
+			if ($stepStatus == 4) {$stepText = "Data Import Session Aborted Successfully at Step " . $stepValue . ".";} //stepValue = step Index reached before abort
+			else if ($stepStatus == 2) {$stepText = "There was an error trying to Abort this Data Import Session.  There may be extraneous data in the Database.";}
 		break;
 	}
 	$stepText = ( $stepIndex == 3 ? $stepText : mysqli_real_escape_string($db_conn, $stepText) );
