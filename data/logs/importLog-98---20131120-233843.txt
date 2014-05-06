@@ -1,0 +1,2 @@
+2013-11-20 23:38:43,SUCCESS,createImportSession,start_dt=2013-11-20 23:38:43,user=549359_ametrix,client_ID=,reportType=
+2013-11-20 23:38:44,

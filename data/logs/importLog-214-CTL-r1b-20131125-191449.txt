@@ -1,0 +1,49 @@
+Ametrix Data Import Session Log
+Import Session ID:     214
+Session Start:         2013-11-25 19:14:49
+User:                  549359_ametrix
+Client ID:             CTL
+Source Data Type:      r1b
+
+2013-11-25 19:14:49,1,Ametrix Data Import Session initialized successfully.,4,-1,878520
+2013-11-25 19:14:49,2,Source Data File uploaded and saved successfully.,4,-1,878920
+2013-11-25 19:14:49,3,Ametrix Universal Data Processor initialized successfully.,4,-1,1314272
+2013-11-25 19:14:50,4,Data Verification Success: Source Data File contains expected number of columns.,4,-1,3240136
+2013-11-25 19:14:50,5,Connection to Ametrix Database established successfully.,4,-1,3240064
+2013-11-25 19:14:51,6,Analyzing Source Data and converting to Ametrix format: -1%,1,-1,3253144
+2013-11-25 19:14:55,6,Analyzing Source Data and converting to Ametrix format: 7%,1,7,22627992
+2013-11-25 19:14:56,6,Analyzing Source Data and converting to Ametrix format: 15%,1,15,22628000
+2013-11-25 19:15:00,6,Analyzing Source Data and converting to Ametrix format: 22%,1,22,25484528
+2013-11-25 19:15:01,6,Analyzing Source Data and converting to Ametrix format: 30%,1,30,25484520
+2013-11-25 19:15:05,6,Analyzing Source Data and converting to Ametrix format: 37%,1,37,28961824
+2013-11-25 19:15:06,6,Analyzing Source Data and converting to Ametrix format: 45%,1,45,28961856
+2013-11-25 19:15:13,6,Analyzing Source Data and converting to Ametrix format: 52%,1,52,31910760
+2013-11-25 19:15:14,6,Analyzing Source Data and converting to Ametrix format: 60%,1,60,31910752
+2013-11-25 19:15:19,6,Analyzing Source Data and converting to Ametrix format: 67%,1,67,34839768
+2013-11-25 19:15:20,6,Analyzing Source Data and converting to Ametrix format: 74%,1,74,34839728
+2013-11-25 19:15:20,6,Warning: There is a problem in the Source Data at row 5017,3,5017,34840136
+2013-11-25 19:15:20,6,Warning: There is a problem in the Source Data at row 5018,3,5018,34840144
+2013-11-25 19:15:20,6,Warning: There is a problem in the Source Data at row 5051,3,5051,34840168
+2013-11-25 19:15:20,6,Warning: There is a problem in the Source Data at row 5052,3,5052,34840176
+2013-11-25 19:15:20,6,Warning: There is a problem in the Source Data at row 5088,3,5088,34840160
+2013-11-25 19:15:20,6,Warning: There is a problem in the Source Data at row 5089,3,5089,34840176
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5122,3,5122,37573232
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5123,3,5123,37573184
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5158,3,5158,37573160
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5159,3,5159,37573128
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5192,3,5192,37573136
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5193,3,5193,37573136
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5227,3,5227,37573136
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5228,3,5228,37573136
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5264,3,5264,37573136
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5265,3,5265,37573128
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5299,3,5299,37573136
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5300,3,5300,37573120
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5334,3,5334,37573136
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5335,3,5335,37573136
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5369,3,5369,37573136
+2013-11-25 19:15:26,6,Warning: There is a problem in the Source Data at row 5370,3,5370,37573136
+2013-11-25 19:15:26,6,Analyzing Source Data and converting to Ametrix format: 82%,1,82,37572752
+2013-11-25 19:15:27,6,Warning: There is a problem in the Source Data at row 5694,3,5694,37573136
+2013-11-25 19:15:27,6,Warning: There is a problem in the Source Data at row 5695,3,5695,37573120
+2013-11-25 19:15:27,6,Analyzing Source Data and converting to Ametrix format: 89%,1,89,37572728

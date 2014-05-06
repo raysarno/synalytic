@@ -1,0 +1,23 @@
+Ametrix Data Import Session Log
+Import Session ID:     185
+Session Start:         2013-11-25 16:33:14
+User:                  549359_ametrix
+Client ID:             CTL
+Source Data Type:      r3
+
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "1", "Ametrix Data Import Session initialized successfully.", "4", "-1");/n2013-11-25 16:33:14,1,Ametrix Data Import Session initialized successfully.,4,-1
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "2", "Source Data File uploaded and saved successfully.", "4", "-1");/n2013-11-25 16:33:14,2,Source Data File uploaded and saved successfully.,4,-1
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "3", "Ametrix Universal Data Processor initialized successfully.", "4", "-1");/n2013-11-25 16:33:14,3,Ametrix Universal Data Processor initialized successfully.,4,-1
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "4", "Data Verification Success: Source Data File contains expected number of columns.", "4", "-1");/n2013-11-25 16:33:16,4,Data Verification Success: Source Data File contains expected number of columns.,4,-1
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "5", "Connection to Ametrix Database established successfully.", "4", "-1");/n2013-11-25 16:33:16,5,Connection to Ametrix Database established successfully.,4,-1
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "6", "Analyzing Source Data and converting to Ametrix format: -1%", "1", "-1");/n2013-11-25 16:33:16,6,Analyzing Source Data and converting to Ametrix format: -1%,1,-1
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "6", "Analyzing Source Data and converting to Ametrix format: 11%", "1", "11");/n2013-11-25 16:33:21,6,Analyzing Source Data and converting to Ametrix format: 11%,1,11
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "6", "Analyzing Source Data and converting to Ametrix format: 22%", "1", "22");/n2013-11-25 16:33:22,6,Analyzing Source Data and converting to Ametrix format: 22%,1,22
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "6", "Analyzing Source Data and converting to Ametrix format: 33%", "1", "33");/n2013-11-25 16:33:23,6,Analyzing Source Data and converting to Ametrix format: 33%,1,33
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "6", "Analyzing Source Data and converting to Ametrix format: 44%", "1", "44");/n2013-11-25 16:33:23,6,Analyzing Source Data and converting to Ametrix format: 44%,1,44
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "6", "Analyzing Source Data and converting to Ametrix format: 55%", "1", "55");/n2013-11-25 16:33:24,6,Analyzing Source Data and converting to Ametrix format: 55%,1,55
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "6", "Analyzing Source Data and converting to Ametrix format: 66%", "1", "66");/n2013-11-25 16:33:24,6,Analyzing Source Data and converting to Ametrix format: 66%,1,66
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "6", "Analyzing Source Data and converting to Ametrix format: 77%", "1", "77");/n2013-11-25 16:33:24,6,Analyzing Source Data and converting to Ametrix format: 77%,1,77
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "6", "Analyzing Source Data and converting to Ametrix format: 88%", "1", "88");/n2013-11-25 16:33:25,6,Analyzing Source Data and converting to Ametrix format: 88%,1,88
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "6", "Analyzing Source Data and converting to Ametrix format: 99%", "1", "99");/n2013-11-25 16:33:26,6,Analyzing Source Data and converting to Ametrix format: 99%,1,99
+INSERT INTO AMX_IMP_LOG_importLogs VALES("1", "185", "", "6", "Source Data converted to Ametrix format successfully.", "4", "-1");/n2013-11-25 16:33:26,6,Source Data converted to Ametrix format successfully.,4,-1

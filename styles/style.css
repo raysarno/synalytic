@@ -1,0 +1,529 @@
+/*Acento Media Buy Tracking System CSS Style Sheet*/
+/*By Ray Sarno of 9K9*/
+
+
+/*///////////////////////////////////*/
+/*/           GENERAL STYLES       /*/
+/*/////////////////////////////////*/
+html, body, div, header, footer, nav, ul, li, a, p, h1, h2, h3, h4, h5 {
+	margin: 0px;
+	border: none;
+	padding: 0px;
+}
+html, body {
+	background: #FFF;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 10pt;
+	color: #039;
+	min-width:1024px;
+}
+input {
+	font-family: "Trebuchet MS", sans-serif;
+	color: #039;
+}
+h1, h3 {
+	display:inline-block;
+	height:inherit;
+	line-height:100%;
+	vertical-align: middle;
+	color:#009BC9;
+	font-variant: small-caps;
+}
+h3 {
+	font-size:18px;
+	text-transform: uppercase;
+}
+a {
+	color: #00A;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: #00F;
+}
+div.error {
+	display:block;
+	position:fixed;
+	top:0px;
+	right:0px;
+	background:#666;
+	color:#F00;
+	border:1px solid #F00;
+}
+
+/*///////////////////////////////////*/
+/*/         MOTHER-LAYOUT          /*/
+/*/////////////////////////////////*/
+
+body {
+	display: block;
+	position: fixed;
+
+	height: 100%;
+	width: 100%;
+
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+
+	background: #DFDFDF;
+	overflow:hidden;
+}
+header, #content, footer {
+	position: absolute;
+	display:block;
+
+	left: 0px;
+	right: 0px;
+}
+
+
+/*///////////////////////////////////*/
+/*/        HEADER & FOOTER         /*/
+/*/////////////////////////////////*/
+
+header {
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	background: #FFF;
+	overflow: hidden;
+	padding: 0px;
+}
+header div {
+	display:block;
+	left:0px;
+	right:0px;
+	padding:5px;
+}
+header #titleBar {
+	top:0px;
+	height:80px;
+}
+header #pageBar {
+	top:82px;
+	height:20px;
+	background:#D5EFFF;
+	color:#FFF;
+	border-top:2px solid #39F;
+	border-bottom:2px solid #39F;
+}
+header nav {
+	display:block;
+	position:absolute;
+	bottom:2px;
+	right:0px;
+	background:none;
+	padding-right:5px;
+	border:none;
+}
+header nav li {
+	display:inline-block;
+	background:none;
+	margin-left:2px;
+}
+
+header nav li a {
+	display:block;
+	background:none;
+	text-transform: uppercase;
+	color:#009BC9;
+	font-size: 16px;
+	height:30px;
+	line-height: 32px;
+	text-align: center;
+	padding:0px 8px;
+}
+
+div#topMenu {
+	display:block;
+	position:absolute;
+	top:2px;
+	right:2px;
+
+	height:24px;
+	width:auto;
+	padding:0px;
+	margin:0px;
+	border:none;
+
+	color:#009BC9;
+}
+div#topMenu div {
+	display:inline-block;
+	font-variant: small-caps;
+	float:right;
+	height:24px;
+	line-height: 24px;
+	padding:0px 5px;
+}
+a.logOut {
+	float:right;
+	background:none;
+	text-transform: uppercase;
+
+	color:#009BC9;
+	
+	font-size: 12px;
+	height:24px;
+	line-height: 24px;
+	text-align: center;
+	padding:0px 8px;
+}
+header nav li a:hover, a.logOut:hover {
+	background:#009BC9;
+	color:#FFF;
+}
+
+footer {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 16px;
+	padding: 7px;
+	background: #FFF;
+	text-align: center;
+	font-size: .8em;
+	position: fixed;
+	border-top:2px solid #39F;
+}
+
+
+/*///////////////////////////////////*/
+/*/     CONTENT LAYOUT STYLES      /*/
+/*/////////////////////////////////*/
+
+#content {
+	position:absolute;
+	left: 0px;
+	top:124px;
+	bottom: 32px;
+	right: 0px;
+	overflow:scroll;
+	min-width:1300px;
+}
+/*#content > div {
+	left:0px;
+	right:0px;
+}*/
+
+/*///////////////////////////////////*/
+/*/       REPORT PAGE STYLES       /*/
+/*/////////////////////////////////*/
+
+#filterWrapper {
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:400px;
+	height:100%;
+	margin:0;
+	padding:0;
+	border:none;
+	border-right:2px solid #39F;
+	background:#ECECEC;
+}
+#filterWrapper h3.filterTitle {
+	display:block;
+	font-size:1.15em;
+	text-transform: none;
+	font-variant: normal;
+	color: #039;
+	line-height: 22px;
+	padding-left: 5px;
+
+	margin:0px 2px;
+	width:50%;
+	float:left;
+	text-align: left;
+}
+#filterWrapper h3.filterTitle:first-of-type {
+	border:none;
+	margin:0;
+}
+#filterWrapper button.filterButton {
+	float:right;
+}
+/* Filter Summary Table Zone */
+#filterWrapper #filterSummary {
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:305px;
+
+	margin:0;
+	padding:0;
+	border:none;
+	border-bottom: 1px solid #39F;
+}
+
+table.filterSummaryTable {
+	position:relative;
+	width:100%;
+	padding:0px;
+	margin:0px;
+	background-clip:border-box;
+	background:#ECECEC;
+}
+table.filterSummaryTable tr {
+	position: relative;
+	height:auto;
+	max-height:34px;
+}
+table.filterSummaryTable td {
+	position: relative;
+	text-overflow:scroll;
+}
+table.filterSummaryTable tr:first-child td:first-child {
+	border-bottom:1px solid #AAA;
+}
+table.filterSummaryTable tr td:first-child {
+	width:37%;
+	max-width:150px;
+	min-width:100px;
+}
+table.filterSummaryTable tr:nth-child(2n+3) {
+	background-color:#DDD;
+}
+table.filterSummaryTable tr:nth-child(2n+2) {
+	background-color:#FFF;
+}
+table.filterSummaryTable select.chart-select {
+	width:100%;
+	margin:0;
+}
+table.filterSummaryTable select.filter-select {
+	width:80px;
+	height:15px;
+	position:absolute;
+	right:0px;
+	top:-1px;
+}
+
+/* Filter Settings Selection Zone */
+#filterWrapper #filterSettings {
+	display:block;
+	position:absolute;
+	top:306px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	width:100%;
+	height:auto;
+	
+	margin:0;
+	padding:0;
+	border:none;
+}
+.ui-tabs-nav {
+	display:table-cell;
+	vertical-align: bottom;
+	text-align: center;
+	padding:0px 25px;
+	width:100%;
+	height:55px;
+}
+.ui-tabs-nav li {
+	display:inline-block;
+	text-indent: 0px;
+	background:#FFF;
+	padding:5px !important;
+	font-size: 1em !important;
+	margin:0px auto;
+	text-align: center;
+
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+
+	border:1px solid #AAA;
+	border-bottom:none;
+}
+.ui-tabs-panel {
+	background:#FFF;
+	padding:5px ;
+	border-top:1px solid #AAA;
+}
+#tab-date #dateSliderWrapper {
+	display:block;
+	top:0;left:0;
+	height:40px;
+	width:100%;
+	margin:50px 0px 0px;
+}
+#tab-date #dat.FilterSummaryTable {
+	padding:0;
+	margin:0;
+	border-collapse:collapse;
+	border:none;
+	width:100%;
+	box-sizing:border-box;
+}
+#tab-date td {
+	padding:2px 0px;
+}
+#tab-date input {
+	width:182px;
+	text-align: center;
+}
+.filterSelectTable {
+	padding:0;
+	margin:0;
+	border-collapse:collapse;
+	border:none;
+	width:100%;
+	box-sizing:border-box;
+	background: #ECECEC;
+	border-top:1px solid #AAA;
+	border-bottom:1px solid #AAA;
+}
+.filterSelectTable tr.filterSelectAllRow,
+.filterSelectTable tr.filterSelectTitleRow {
+	border-bottom:1px solid #AAA;
+}
+.filterSelectTable tr:nth-child(2n+3) {
+	background:#DDD;
+}
+.filterSelectTable tr td:first-of-type {
+	width:20px;
+}
+
+/* Chart Div */ 
+
+#chartWrapper {
+	display:block;
+	position:absolute;
+	top:0;
+	left:402px;
+	right:0;
+	width:auto;
+	height:500px;
+	min-height:400px;
+	margin:0px;
+	padding:0px;
+	border:none;
+	border-bottom:2px solid #39F;
+}
+
+#reportTableWrapper {
+	display:block;
+	position:absolute;
+	top:502px;
+	left:402px;
+	right:0;
+	bottom:0;
+	width:auto;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	border:none;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+
+
+/* STYLES FOR BASIC DATA TABLE AND DATA FILE REFERENCE TABLE */
+/* styles specific to basic data table */
+table.dataTable {
+	position:relative;
+	border-collapse: collapse;
+	padding:0px;
+	margin:0px;
+	width:100%;
+	border:none;
+	border-bottom:2px solid #BBB;
+	background-clip:border-box;
+}
+table.dataTable tr:hover {
+	cursor:default;
+	background-color:#ADEBFF !important;
+}
+table.dataTable tr:nth-child(2n+3) {
+	background-color:#DDD;
+}
+table.dataTable tr:first-child td {
+	margin:0px;
+	background-color:#FFF;
+	border-top:1pt solid #FFF;
+	border-left:1pt solid #FFF;
+	border-bottom:1pt solid #39F;
+}
+table.dataTable
+table.dataTable tr td:last-child {
+	text-align:right;
+}
+
+/* styles specifc to data file reference table */
+table.fileTypeRef {
+	border-collapse: collapse;
+	position:relative;
+	margin:auto;
+	min-width:400px;
+	min-height:200px;
+	border-top:none !important;
+	border:2pt solid #39F;
+	font-size:1.2em;
+	empty-cells: hide;
+}
+table.fileTypeRef tr td {text-align:center;min-width:40px;}
+table.fileTypeRef tr:first-child {border-bottom:1pt solid #39F;}
+table.fileTypeRef tr td:first-child {background-color:#F2F2F2;border-right:1px solid #111;}
+table.fileTypeRef tr.white-BG {background-color:#F2F2F2;}
+table.fileTypeRef tr.orange-BG {background-color:#FBF6E5;}
+table.fileTypeRef tr.pink-BG {background-color:#FAE5F4;}
+table.fileTypeRef tr.green-BG {background-color:#E5FAEB;}
+table.fileTypeRef tr.blue-BG {background-color:#E5EAFA;}
+
+
+/* styles shared by both Basic Data Table adn Data File Reference Table */
+table.dataTable tr td, table.fileTypeRef tr td {
+	padding:2px 6px;
+	vertical-align: middle;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:auto;
+	max-width:300px;
+}
+table.dataTable tr, table.fileTypeRef {
+	background-color:#F2F2F2;
+}
+
+/* Data Cleaning Tool Table Styles */
+table.dataCleaner {
+	border-collapse: collapse;
+	position:relative;
+	margin:auto;
+	width:700px;
+	height:auto;
+	max-height:100%;
+	border:2px solid #39F;
+	border-top:none;
+	background:#FFF;
+	font-size:1.2em;
+	empty-cells: hide;
+	overflow:scroll;
+}
+table.dataCleaner tr,
+table.dataCleaner td {
+	min-height:30px;
+	max-height:500px;
+	overflow:scroll;
+}
+table.dataCleaner tr:first-child {text-align:center;background:#FFF;border-bottom:1pt solid #39F;}
+table.dataCleaner tr td {
+	overflow:scroll;
+}
+table.dataCleaner select {
+	width:100%;
+}
+
+
+

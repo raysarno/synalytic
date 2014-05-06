@@ -1,0 +1,58 @@
+Ametrix Data Import Session Log
+Import Session ID:     264
+Session Start:         2013-12-02 16:18:22
+User:                  549359_ametrix
+Client ID:             CTL
+Source Data Type:      r4b
+
+2013-12-02 16:18:23,1,Ametrix Data Import Session initialized successfully. Import Session ID 264,4,264,892632
+2013-12-02 16:18:23,2,Source Data File uploaded and saved successfully.,4,-1,893040
+2013-12-02 16:18:23,3,Ametrix Universal Data Processor initialized successfully.,4,-1,1355696
+2013-12-02 16:18:27,4,Data Verification Success: Source Data File contains expected number of columns (13).,4,13,3276656
+2013-12-02 16:18:27,5,Connection to Ametrix Database established successfully.,4,-1,3276656
+2013-12-02 16:18:27,6,Analyzing Source Data and converting to Ametrix format: 0%,1,0,3293832
+2013-12-02 16:18:40,6,Analyzing Source Data and converting to Ametrix format: 2%,1,2,33760320
+2013-12-02 16:18:41,6,Analyzing Source Data and converting to Ametrix format: 3%,1,3,33760320
+2013-12-02 16:18:41,6,Analyzing Source Data and converting to Ametrix format: 5%,1,5,33760320
+2013-12-02 16:18:42,6,Analyzing Source Data and converting to Ametrix format: 6%,1,6,33760312
+2013-12-02 16:18:53,6,Analyzing Source Data and converting to Ametrix format: 8%,1,8,33928704
+2013-12-02 16:18:54,6,Analyzing Source Data and converting to Ametrix format: 9%,1,9,33928688
+2013-12-02 16:18:55,6,Analyzing Source Data and converting to Ametrix format: 11%,1,11,33928728
+2013-12-02 16:18:55,6,Analyzing Source Data and converting to Ametrix format: 12%,1,12,33928680
+2013-12-02 16:19:08,6,Analyzing Source Data and converting to Ametrix format: 14%,1,14,34136096
+2013-12-02 16:19:09,6,Analyzing Source Data and converting to Ametrix format: 16%,1,16,34136096
+2013-12-02 16:19:09,6,Analyzing Source Data and converting to Ametrix format: 17%,1,17,34136112
+2013-12-02 16:19:10,6,Analyzing Source Data and converting to Ametrix format: 19%,1,19,34136136
+2013-12-02 16:19:26,6,Analyzing Source Data and converting to Ametrix format: 20%,1,20,34352568
+2013-12-02 16:19:27,6,Analyzing Source Data and converting to Ametrix format: 22%,1,22,34352536
+2013-12-02 16:19:28,6,Analyzing Source Data and converting to Ametrix format: 23%,1,23,34352552
+2013-12-02 16:19:28,6,Analyzing Source Data and converting to Ametrix format: 25%,1,25,34352552
+2013-12-02 16:19:46,6,Analyzing Source Data and converting to Ametrix format: 26%,1,26,34745376
+2013-12-02 16:19:46,6,Analyzing Source Data and converting to Ametrix format: 28%,1,28,34745376
+2013-12-02 16:19:47,6,Analyzing Source Data and converting to Ametrix format: 29%,1,29,34745376
+2013-12-02 16:19:47,6,Analyzing Source Data and converting to Ametrix format: 31%,1,31,34745384
+2013-12-02 16:20:09,6,Analyzing Source Data and converting to Ametrix format: 33%,1,33,35458464
+2013-12-02 16:20:10,6,Analyzing Source Data and converting to Ametrix format: 34%,1,34,35458456
+2013-12-02 16:20:10,6,Analyzing Source Data and converting to Ametrix format: 36%,1,36,35458464
+2013-12-02 16:20:11,6,Analyzing Source Data and converting to Ametrix format: 37%,1,37,35458440
+2013-12-02 16:20:29,6,Analyzing Source Data and converting to Ametrix format: 39%,1,39,37691656
+2013-12-02 16:20:29,6,Analyzing Source Data and converting to Ametrix format: 40%,1,40,37691488
+2013-12-02 16:20:30,6,Analyzing Source Data and converting to Ametrix format: 42%,1,42,37691488
+2013-12-02 16:20:30,6,Analyzing Source Data and converting to Ametrix format: 43%,1,43,37691480
+2013-12-02 16:20:54,6,Analyzing Source Data and converting to Ametrix format: 45%,1,45,37781728
+2013-12-02 16:20:54,6,Analyzing Source Data and converting to Ametrix format: 47%,1,47,37781704
+2013-12-02 16:20:55,6,Analyzing Source Data and converting to Ametrix format: 48%,1,48,37781728
+2013-12-02 16:20:55,6,Analyzing Source Data and converting to Ametrix format: 50%,1,50,37781704
+2013-12-02 16:21:16,6,Analyzing Source Data and converting to Ametrix format: 51%,1,51,38012096
+2013-12-02 16:21:16,6,Analyzing Source Data and converting to Ametrix format: 53%,1,53,38012096
+2013-12-02 16:21:17,6,Analyzing Source Data and converting to Ametrix format: 54%,1,54,38012096
+2013-12-02 16:21:18,6,Analyzing Source Data and converting to Ametrix format: 56%,1,56,38012096
+2013-12-02 16:21:58,6,Analyzing Source Data and converting to Ametrix format: 57%,1,57,38210888
+2013-12-02 16:21:59,6,Analyzing Source Data and converting to Ametrix format: 59%,1,59,38210912
+2013-12-02 16:21:59,6,Analyzing Source Data and converting to Ametrix format: 61%,1,61,38210912
+2013-12-02 16:22:00,6,Analyzing Source Data and converting to Ametrix format: 62%,1,62,38210912
+2013-12-02 16:22:51,6,Analyzing Source Data and converting to Ametrix format: 64%,1,64,38363072
+2013-12-02 16:22:52,6,Analyzing Source Data and converting to Ametrix format: 65%,1,65,38363112
+2013-12-02 16:22:54,6,Analyzing Source Data and converting to Ametrix format: 67%,1,67,38363160
+2013-12-02 16:22:54,6,Analyzing Source Data and converting to Ametrix format: 68%,1,68,38363112
+2013-12-02 16:22:54,6,Analyzing Source Data and converting to Ametrix format: 70%,1,70,38363168

@@ -1,0 +1,23 @@
+Ametrix Data Import Session Log
+Import Session ID:     203
+Session Start:         2013-11-25 18:30:05
+User:                  549359_ametrix
+Client ID:             CTL
+Source Data Type:      r3
+
+2013-11-25 18:30:05,1,Ametrix Data Import Session initialized successfully.,4,-1,877504
+2013-11-25 18:30:05,2,Source Data File uploaded and saved successfully.,4,-1,877888
+2013-11-25 18:30:05,3,Ametrix Universal Data Processor initialized successfully.,4,-1,1312400
+2013-11-25 18:30:05,4,Data Verification Success: Source Data File contains expected number of columns.,4,-1,3237840
+2013-11-25 18:30:05,5,Connection to Ametrix Database established successfully.,4,-1,3237768
+2013-11-25 18:30:06,6,Analyzing Source Data and converting to Ametrix format: -1%,1,-1,3250048
+2013-11-25 18:30:09,6,Analyzing Source Data and converting to Ametrix format: 11%,1,11,23809104
+2013-11-25 18:30:09,6,Analyzing Source Data and converting to Ametrix format: 22%,1,22,23809104
+2013-11-25 18:30:10,6,Analyzing Source Data and converting to Ametrix format: 33%,1,33,23809104
+2013-11-25 18:30:10,6,Analyzing Source Data and converting to Ametrix format: 44%,1,44,23809104
+2013-11-25 18:30:10,6,Analyzing Source Data and converting to Ametrix format: 55%,1,55,23809104
+2013-11-25 18:30:11,6,Analyzing Source Data and converting to Ametrix format: 66%,1,66,23809104
+2013-11-25 18:30:11,6,Analyzing Source Data and converting to Ametrix format: 77%,1,77,23809104
+2013-11-25 18:30:11,6,Analyzing Source Data and converting to Ametrix format: 88%,1,88,23809104
+2013-11-25 18:30:12,6,Analyzing Source Data and converting to Ametrix format: 99%,1,99,13562248
+2013-11-25 18:30:12,6,Source Data converted to Ametrix format successfully.,4,-1,8072888

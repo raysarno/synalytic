@@ -1,0 +1,282 @@
+/* CSS Styles for line items in CRM */
+
+/*////////////////////////////////////*/
+/*/     LINEITEM GENERAL STYLES     /*/
+/*//////////////////////////////////*/
+
+.lineitem,
+.filterBar,
+#listSorters,
+.pagination {
+	display:block;
+	position:relative;
+	left: 0px;
+	right:0px;
+	top: 0px;
+
+	background: #1A1A1A;
+	
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 12px;
+}
+.lineitem {overflow:visible;}
+
+
+.lineitem:nth-child(even) {background: #0c0c0c;}
+.lineitem:hover {background: #300;}
+.pagination {background: #222;}
+#listSorters, .filterBar {background: #111;}
+
+.lineitem > div,
+.lineitem .lineitem-content > div,
+#listSorters > div {
+	position:relative;
+	float:left;
+	display:block;
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+
+.listBorder {
+	dipslay:block;
+	height:1px;
+	background:#444;
+	border:none;
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+.lineitem .lineitem-content > div,
+#listSorters > div {
+	height:inherit;
+	margin-right:5px;
+}
+
+.lineitem > div.quickAction {
+	background-color:#333;
+	height:0px;
+}
+
+
+/* lineitem: FULL SIZE STYLES */
+.lineitem.full > div {width:100%;}
+.lineitem.full {padding:0px;}
+.lineitem.full .lineitem-content,
+.lineitem.full .quickAction {padding:7px 0px;}
+
+.lineitem.full {height:64px;}
+.lineitem.full .lineitem-content {height:50px;}
+#listSorters.full,
+.filterBar.full,
+.pagination.full {height:20px;line-height:20px;padding:5px 7px;}
+
+
+/* FILTER BAR STYLES */
+
+.filterBar form {
+	display:block;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	border:none;
+}
+.filterBar input {
+	display:block;
+	float:left;
+	height:100%;
+	margin:0;
+	margin-right:10px;
+	font-size:12px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.filterBar input[type="submit"] {
+	padding:0 10px;
+} 
+
+/*.pagination BAR STYLES */
+
+.pagination #entPrPg {
+	display:block;
+	float:left;
+}
+.pagination #entPrPg select {
+	margin:0px 2px;
+}
+.pagination #entPrPg span {
+	color:#FC0;
+	text-transform:uppercase;
+}
+.pagination #pgScroller {
+	display:block;
+	height:inherit;
+	width:400px;
+	text-align: center;
+	position:relative;
+	margin-right:auto;
+	margin-left:auto;
+}
+.pagination #pgScroller a {
+	cursor:pointer;
+}
+.pagination #pgScroller span {
+	color: #999;
+	font-size: 1.2rem;
+	text-decoration: underline;
+}
+.pagination #pgSubmit {
+	display:block;
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+
+/* LISTSORTER BAR STYLES */
+#listSorters div img {
+	cursor:pointer;
+}
+
+/* lineitem contents: classes */
+
+.lineitem .centered-content > * {
+	position:relative;
+	display:block;
+	top:50%;
+	margin-top:-50%;
+}
+
+div.data-quality {
+	display:inline-block;
+	height:6px;
+	width:6px;
+	border-radius:3px;
+	margin:0px 2px 2px 0px;
+	cursor:help;
+}
+div.data-quality.good {background:#0C0;}
+div.data-quality.warn {background:#CC0;}
+div.data-quality.bad {background:#C00;}
+
+/*////////////////////////////////////*/
+/*/        LINEITEM 'COLUMNS'       /*/
+/*//////////////////////////////////*/
+/* These classes specify widths for the purposes of uniformity (e.g. so that sorters match up with width-wise) */
+
+/* General lineitem columns */
+.lineitem .lineitem-content .selector, 			#listSorters .selector 			{width:15px;}
+.lineitem .lineitem-content .QA_Wrapper, 		#listSorters .QA_Wrapper		{width:30px;} /* STANDS FOR 'QUICKACITON WRAPPER' */
+.lineitem .lineitem-content .score, 			#listSorters .score				{width:50px;}
+.lineitem .lineitem-content .badges, 			#listSorters .badges			{width:70px;}
+.lineitem .lineitem-content .mainImage, 		#listSorters .mainImage 		{width:50px;}
+.lineitem .lineitem-content .infoColumn, 		#listSorters .infoColumn		{width:300px;}
+.lineitem .lineitem-content .infoColumn.small, 	#listSorters .infoColumn.small	{width:200px;}
+.lineitem .lineitem-content .icons, 			#listSorters .icons	 			{width:200px;}
+
+
+/*////////////////////////////////////*/
+/*/          COLUMN CONTENT         /*/
+/*//////////////////////////////////*/
+
+/* QA_Wrapper STYLES */
+	.QA_Wrapper .actionSelect,
+	.QA_Wrapper .actionClose {
+		position:relative;
+		width: 30px;
+		height:30px;
+		font-size:28px;
+		display:block;
+		line-height:30px;
+		text-align: center;
+		background-color:#555;
+		color:#AAA;
+	}
+	.QA_Wrapper div.actionSelect {cursor:default;}
+	.QA_Wrapper div.actionClose {cursor:pointer;vertical-align:middle;}
+
+	.QA_Wrapper div.actionSelect:hover,
+	.QA_Wrapper div.actionClose:hover {
+		background-color:#600;
+		color:#FFF;
+	}
+	.QA_Wrapper div.actionSelect .actionList {
+		display:none;
+		width:140px;
+		height:auto;
+		position:absolute;
+		top:0px;
+		left:30px;
+		z-index:999;
+	}
+	.QA_Wrapper div.actionSelect:hover div, 
+	.QA_Wrapper div.actionSelect div:hover  {
+		display:block;
+	}
+	.QA_Wrapper div.actionSelect:hover div a.actionItem, 
+	.QA_Wrapper div.actionSelect div:hover a.actionItem  {
+		display:block;
+	}
+	
+	.QA_Wrapper div.actionSelect div a.actionItem {
+		display:none;
+		width:100%;
+		border-left:1px solid #AAA;
+		height:20px;
+		line-height:20px;
+		font-size:12px;
+		padding:0px;
+		margin:0px;
+		color:#FFF;
+		background-color:#600;
+		cursor:pointer;
+		float:left;
+	}
+	.QA_Wrapper div.actionSelect:hover div a.actionItem, .QA_Wrapper div.actionSelect div:hover a.actionItem  {
+		display:block;
+	}
+	.QA_Wrapper div.actionSelect div:hover a.actionItem:hover {
+		background-color:#722;
+	}
+	.QA_Wrapper div.actionSelect div:hover a.actionItem:active {
+		background-color:#844;
+	}
+
+
+/* MAINIMAGE COLUMN STYLES */
+.lineitem .lineitem-content .mainImage >img {height:50px;width:50px;}
+
+/* INFO COLUMN STYLES */
+.lineitem .lineitem-content .infoColumn > div {
+	display:inline-block;
+	width:100%;
+	height:16px;
+	max-height:16px;
+	line-height:16px;
+	margin-top:1px;
+	text-overflow:ellipsis;
+	overflow-y:hidden;
+	overflow-x:scroll;
+}
+.lineitem .lineitem-content .infoColumn > div:first-of-type {margin-top: 0px;}
+.lineitem .lineitem-content .infoColumn > div:not(.name) {color:#BBB;font-size:11px;}
+.lineitem .lineitem-content .infoColumn > div.indented {text-indent:5px;}
+
+/* ICONS COLUMN STYLES */
+
+.lineitem .lineitem-content .icons > a,
+.lineitem .lineitem-content .icons > img {
+	display:inline-block;
+	position:relative;
+	float:left;
+	height:30px;
+	width:30px;
+	margin:10px 5px;
+}
+
+
+
+

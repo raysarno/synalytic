@@ -1,0 +1,690 @@
+/*/  CRM CSS Style Sheet	   /*/
+/*/ Site Version: 2.0         /*/
+/*/ Author: Ray Sarno 		 /*/
+
+
+/*///////////////////////////////////*/
+/*/           GENERAL STYLES       /*/
+/*/////////////////////////////////*/
+html, body, div, header, footer, nav, ul, li, a, p, h1, h2, h3, h4, h5 {
+	margin: 0px;
+	border: none;
+	padding: 0px;
+}
+html {
+	background: #111;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 10pt;
+	color: #FFF;
+}
+
+/* Title (Heading) Styles */
+h1 {
+	display:table-cell;
+	position:absolute;
+	top:0;left:0;right:0;bottom:0;
+	height:inherit;
+	padding:inherit;
+	vertical-align: middle;
+	text-align:left;
+	text-transform: uppercase;
+	font-size:16px;
+}
+
+/* Link Styles*/
+a {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: #F00;
+}
+
+/* Form Styles */
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+	/*padding: 10px;*/
+	background: #333;
+	border: solid 1px #666;
+	color: #fff;
+	/*text-align: center;*/
+}
+textarea {
+	font-family: "Trebuchet MS", sans-serif;
+	text-align: left;
+	border-width: 1px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+	outline: solid 1px #f00;
+}
+input[type="submit"] {
+	font-size: 1.2rem;
+	padding: 5px 10px;
+	background: #666;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+}
+input[type="submit"].small {
+	font-size:1rem;
+	padding:0px 10px;
+}
+input[type="submit"]:hover {
+	background: #900;
+}
+input[type="submit"].disabled {color:#BBB;cursor:no-drop;}
+input[type="submit"].disabled:hover {background: #666;}
+
+input.buttonStyle[type="submit"],
+button {
+	height:20px;
+	background:#666;
+	color:#FFF;
+	padding:0px 10px;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size:10px;
+	font-weight:normal;
+}
+.inputEditMode {
+	outline:1px solid #f00;
+}
+
+/* Other Styles */
+div.error {
+	display:block;
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	background:#666;
+	color:#F00;
+	width:40%;
+	min-height:10px;
+	border:1px solid #F00;
+	z-index:999;
+}
+
+.hidden {display:none !important;}
+
+/*Alignment of login page content to center*/
+#login {
+	text-align: center;
+}
+
+
+/*Alignment of "Sign out" tab to the right on homepage*/
+#signOut{
+	float:right;
+}
+/*///////////////////////////////////*/
+/*/         MOTHER-LAYOUT          /*/
+/*/////////////////////////////////*/
+
+body {
+	display: block;
+	position: fixed;
+
+	height: 100%;
+	width: 100%;
+
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+
+	background: #000;
+	overflow:hidden;
+
+	min-width:1100px !important;
+}
+header, #content, footer {
+	position: absolute;
+	display:block;
+
+	left: 0px;
+	right: 0px;
+}
+
+
+/*///////////////////////////////////*/
+/*/        HEADER & FOOTER         /*/
+/*/////////////////////////////////*/
+
+header {
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	background: #333;
+	padding: 0px;
+	border-bottom:1px solid #666;
+}
+header div { /*Applies to #titleBar and # pageBar */
+	display:block;
+	left:0px;
+	right:0px;
+	padding:5px;
+}
+
+/* Title Bar Styles */
+header #titleBar {
+	top:0px;
+	height:20px;
+}
+
+header nav {
+	display:table-cell;
+	position: absolute;
+	top:0;left:0;right:0;bottom:0;
+	background:none;
+	vertical-align: middle;
+	text-align: center;
+	height:inherit;
+	padding:inherit;
+	border:none;
+}
+header nav li {
+	display:inline-block;
+	position:relative;
+	background:none;
+	margin-left:2px;
+}
+header nav li:hover {
+	overflow:visible;
+}
+
+header nav li a {
+	display:table-cell;
+	background:none;
+	text-transform: uppercase;
+	color:#FFF;
+	font-size: 16px;
+	height:inherit;
+	vertical-align: middle;
+	text-align: center;
+	padding:0px 8px;
+}
+header nav li ul {
+	display:block;
+	position:absolute;
+	top:100%;
+	left:0;
+	width:150px;
+	z-index:999;
+	border-top:6px solid transparent;
+}
+header nav li:hover ul li,
+header nav li ul li:hover  {
+	display:block;
+}
+header nav li ul li {
+	display:none;
+	background:#444;
+	width:100%;
+	float:left;
+	padding:2px 0px;
+	border-left:1px solid #666;
+}
+
+/* Page Bar Styles */
+header #pageBar {
+	top:30px;
+	height:40px;
+	background:#111;
+	color:#FFF;
+}
+#pageBar input {
+	font-size: 1em;
+	padding: 5px;
+	border-width: 1px;
+	text-align: left;
+	margin: 5px;
+}
+#pageBar input[type="submit"] {
+	font-size: 1rem;
+	padding: 6px 11px;
+	margin: 5px;
+}
+#pageBar .notice {
+	display:block;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	height:100%;
+	width:100%;
+	font-size:10px;
+	text-align: center;
+}
+#pageBar .notice.success {border:4px solid #006600;}
+#pageBar .notice.failure {border:4px solid #990000;}
+#pageBar .notice.warning {border:4px solid #CC9900;}
+
+#pageBar .notice h3 {
+	display:inline-block;
+	width:100%;
+	font-size:12px;
+	color:#FFF;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* Footer Styles */
+footer {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 20px;
+	padding: 5px;
+	background: #333;
+	text-align: center;
+	font-size: .8em;
+	position: fixed;
+	display:table-cell;
+	vertical-align: middle;
+	border-top:1px solid #666;
+}
+/*  Misc. General Styles */
+
+div.ajaxLoader {
+	display:block;
+	height:32px !important;
+	width:32px !important;
+	position: absolute;
+	top:50% !important;
+	left:50% !important;
+	margin:-16px 0 0 -16px;
+}
+
+
+/*///////////////////////////////////*/
+/*/     CONTENT LAYOUT STYLES      /*/
+/*/////////////////////////////////*/
+
+#content {
+	position:absolute;
+	left: 0px;
+	top:31px;
+	bottom: 31px;
+	right: 0px;
+	overflow:scroll;
+	min-width:inherit;
+}
+#content.with-pageBar {top:81px;}
+#content > div {
+	left:0px;
+	right:0px;
+	min-width:inherit;
+}
+h2.pageTitle {
+	display:block;
+	background-color:#555;
+	position:relative;
+	width:98%;
+	padding:5px 1% 5px 1%;
+	text-align: left;
+	color:#FC0;
+	font-size:20px;
+	height:26px;
+	line-height:26px;
+}
+
+/* ContentTable Styles - ONLY USED ON LOCATIONATOR PAGE RIGHT NOW */
+#content .contentTable {
+	height:100%;
+	max-height:100%;
+	min-width:400px;
+	max-width:400px;
+
+	border:none;
+	border-left:1px solid #666;
+	border-right:1px solid #666;
+
+	border-collapse: collapse;
+
+	background:#222;
+}
+.contentTable.centered {
+	position:relative;
+	margin:0 auto;
+}
+.contentTable.left {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.contentTable.right {
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+
+#content .contentTable tr {height:35px;min-height:35px;}
+#content .contentTable tr.divider {border-bottom:1px solid #666;}
+#content .contentTable tr.subdivider {border-bottom:1px solid #444;}
+#content .contentTable tr:last-of-type {height:100%;}
+
+#content .contentTable input[type="text"] {
+	width:100%;
+	height:100%;
+	font-size:inherit;
+	background:#111;
+
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+#content .contentTable td {
+	padding:0px;
+	margin:0px;
+}
+table.condensed tr,
+table.contentTable tr.condensed {
+	font-size:12px;
+	height:25px !important;
+	line-height:25px !important;
+	max-height:25px;
+}
+.contentTable tr.labels {
+	background:#111 !important;
+}
+div.innerListWrapper {
+	height:100%;width:100%;border:none;margin:0;padding:0;overflow-x:hidden;overflow-y:scroll;
+}
+
+/* Details Page Styles */
+
+#content .fullWidth {
+	left:0px;
+	right:0px;
+	height:auto;
+	min-width:inherit;
+	background:#222;
+	border:none;
+	border-top:1px solid #666;
+	border-bottom:1px solid #666;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+#content .listWrapper {
+	display:block;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	top:250px !important;
+	height:auto;
+
+	min-height:400px;
+	min-width:inherit;
+	border:none;
+	border-top:1px solid #666;
+
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+/* .listWrapper Tabs */
+#content .tabList {
+	display:block;
+	position:absolute;
+	width:100%;
+	height:30px;
+	top:220px;
+	border:none;
+	background:none;
+	z-index:888;
+}
+.tabList .tab {
+	display:inline-block;
+	height:29px;
+	line-height: 29px;
+	font-size:16px;
+	text-align: center;
+	text-transform: uppercase;
+	border:1px solid #666;
+	background:#000;
+	margin-left:30px;
+	padding:0 20px;
+	cursor:pointer;
+	color:#AAA;
+	z-index:888;
+}
+.tabList .tab:hover {
+	background:#111;
+	color:#FFF;
+}
+.tabList .tab.selected {
+	background:#333;
+	color:#FFF;
+	border-bottom:1px solid #333;
+}
+
+#content .fullWidth > div {
+	display:inline-block;
+	width:100%;
+	height:auto;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+#content .fullWidth .titleBar {
+	height:30px;
+	background:#333;
+}
+
+#content .fullWidth .titleBar h2 {
+	height:inherit;
+	line-height:30px;
+	margin-left:5px;
+	font-size:15px;
+}
+
+#content .details > div {
+	display:block;
+	position:relative;
+	height:100%;
+	float:left;
+}
+
+.details .sidebar {width:100px;}
+.details .mainInfo {width:400px;}
+
+.details .sidebar img,
+.details .sidebar div {
+	display:block;
+	position:relative;
+	margin:9px auto;
+	font-size:9px;
+}
+.details .sidebar .mainPic {
+	height:70px;
+}
+
+.details .mainInfo > div {
+	display:block;
+	position:relative;
+	float:left;
+	
+	width:100%;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	border:none;
+	margin:0px;
+	padding:4px;
+}
+
+.details .mainInfo > div.infoFieldWrapper {height:40px;}
+.details .mainInfo > div.infoFieldWrapper label,
+.details .mainInfo > div.infoFieldWrapper input[type="text"],
+.details .mainInfo > div.infoFieldWrapper textarea {
+	width:100%;
+	display:inline-block;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	margin:1px 0px 0px;
+}
+.details .mainInfo > div.infoFieldWrapper.double {height:80px;}
+.details .mainInfo > div.infoFieldWrapper label {margin:0px;}
+.details .mainInfo > div.infoFieldWrapper .halfWidth {
+	display:inline-block;
+	width:49%;
+	box-sizing:padding-box;
+	-webkit-box-sizing:padding-box;
+}
+
+.details .mainInfo > div.infoFieldWrapper label {font-size:9px;}
+.details .mainInfo > div.infoFieldWrapper textarea {
+	display:block;
+	width:100%;
+	height:58px;
+	resize:none;
+	font-size:9px;
+}
+
+.details .mainInfo > div.socialWrapper {height:80px;}
+.details .mainInfo > div.socialWrapper table {
+	width:100%;
+	border:none;
+	border-collapse: collapse;
+	vertical-align: middle;
+	text-align: center;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+
+
+/*///////////////////////////////////*/
+/*/       LOCATIONATOR STYLES      /*/
+/*/////////////////////////////////*/
+
+table.innerList {
+	width:100%;
+	border:none;
+	border-collapse: collapse;
+	max-width:400px;
+}
+table.innerList td {
+	position:relative;
+	overflow-y:hidden;
+	overflow-x:scroll;
+}
+table#cmp_count_lcn.innerList td:first-of-type {width:25px;max-width:25px;}
+table#cmp_count_lcn.innerList td:nth-child(2) {width:120px;max-width:120px;}
+table#cmp_count_lcn.innerList td:nth-child(3) {width:180px;max-width:180px;}
+table#cmp_count_lcn.innerList td:last-of-type {width:75px;max-width:75px;text-align:center;}
+table.innerList tr {
+	height:20px;
+	font-size:12px;
+}
+table.innerList tr.checked {background:#039 !important;}
+table.innerList tr:nth-child(2n+1) {background:#333;}
+table.innerList tr:hover {
+	cursor:pointer;
+	background:#300;
+}
+.innerList input[type="checkbox"],
+.innerList input[type="radio"] {
+	position:absolute;
+	left:50%;
+	top:50%;
+	height:16px;
+	width:16px;
+	margin:0;
+	margin-top:-8px;
+	margin-left:-8px;
+	cursor:pointer;
+}
+input.inline {
+	position:static !important;
+	display:inline-block !important;
+	height:13px !important;
+	width:13px !important;
+	margin:0 !important;
+}
+.buttonInRow {
+	height:20px;
+	width:100%;
+	font-size:12px;
+	line-height:20px;
+}
+
+
+table.contentTable tr.condensed td:first-of-type {width:231px;}
+
+.telList td {text-align: center;vertical-align: middle;}
+.telList div {display:block;float:left;height:100%;margin:0;padding:0;text-align: center;font-size:12px;}
+.telList .telDelete {width:40px;max-width:40px;border-right:1px solid #444;}
+.telList .tel_assoc_cmp {width:120px;max-width:120px;font-size:11px;}
+.telList .tel_assoc_lcn {width:70px;max-width:70px;}
+.telList .tel_number {width:169px;max-width:170px;}
+
+tr.tel_addNew {
+	height:50px;
+	background:transparent !important;
+	vertical-align: top;
+	text-align: center;
+	border-top:1px solid #444;
+}
+
+tr.tel_addNew button {
+	font-size: 12px;
+	padding: 1px 10px;
+	background: #666;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	margin:0 auto;
+}
+tr.tel_addNew button:hover {
+	background: #900;
+}
+
+
+/*///////////////////////////////////*/
+/*/       grp_details STYLES       /*/
+/*/////////////////////////////////*/
+
+table.rules {
+	width:100%;
+	font-size:13px;
+	color:#FFF;
+	background:#222;
+	border-collapse: collapse;
+}
+
+table.rules tr:nth-child(2n) {background:#333;}
+table.rules tr.titleBar {
+	background:#111;
+	font-size:16px;
+	text-indent: 10px;
+	border-bottom:1px solid #666;
+}
+table.rules tr.titleBar td {
+	padding-top: 20px;
+}
+table.rules tr:not(.titleBar) td {
+	height:18px;
+	line-height:18px;
+	padding:0px;
+}
+
+table.rules tr td.hierarchy {width:80px;text-indent: 10px;}
+table.rules tr td.relation {width:20px;}
+
+table.rules button {
+	height:18px;
+	margin:0px;
+	font-size:11px;
+	box-sizing:border-box;
+}
+
+

@@ -1,0 +1,22 @@
+Ametrix Data Import Session Log
+Import Session ID:     300
+Session Start:         2013-12-03 15:58:59
+User:                  549359_ametrix
+Client ID:             CTL
+Source Data Type:      r4b
+
+2013-12-03 15:58:59,1,Ametrix Data Import Session initialized successfully. Import Session ID 300,4,300,841168
+2013-12-03 15:58:59,2,Source Data File uploaded and saved successfully.,4,-1,841720
+2013-12-03 15:58:59,3,Ametrix Universal Data Processor initialized successfully.,4,-1,1025552
+2013-12-03 15:58:59,4,Data Verification Success: Source Data File contains expected number of columns (13).,4,13,1524144
+2013-12-03 15:58:59,5,Connection to Ametrix Database established successfully.,4,-1,1524144
+2013-12-03 15:58:59,-1,dup check method normal worked,4,0,1526832
+2013-12-03 15:58:59,-1,dup check method normal worked,4,0,1527072
+2013-12-03 15:58:59,-1,dup check method normal worked,4,0,1527312
+2013-12-03 15:58:59,-1,dup check method normal worked,4,0,1527552
+2013-12-03 15:58:59,-1,dup check method normal worked,4,0,1527912
+2013-12-03 15:59:00,6,Analyzing Source Data and converting to Ametrix format: 0%,1,0,1552936
+2013-12-03 15:59:03,6,Analyzing Source Data and converting to Ametrix format: 87%,1,87,12582120
+2013-12-03 15:59:03,6,Source Data converted to Ametrix format successfully.,4,-1,5762192
+2013-12-03 15:59:03,6,Report: Total Source Data Rows with Data Conversion Warnings: 0,5,0,5762408
+2013-12-03 15:59:03,7,Data Verification Success: Converted Data contains expected number of rows.,4,576,5765840

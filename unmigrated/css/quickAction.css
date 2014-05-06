@@ -1,0 +1,107 @@
+/* CSS Styles for Phone Event quickAction (QA) box */
+
+div.phoneQA {
+	display:block;
+	position:relative;
+	height:100%;
+	padding:0px;
+	border-right:1px solid #999;
+	border-left:1px solid #999;
+	width:1160px;
+	margin-left:20px;
+}
+div.phoneQA div {
+	display:block;
+	position:relative;
+	float:right;
+	height:100%;
+	border:none;
+	margin-left:5px;
+}
+table.phoneNumberSelect {
+	position:relative;
+	float:left;
+	border:none;
+	border-collapse: collapse;
+	width:600px;
+	height:100%;
+	text-align:center;
+}
+table.numberList {
+	width:100%;
+	border-collapse: collapse;
+	border:none;
+	text-align:center;
+}
+table.phoneNumberSelect td {
+	border:1px solid #FFF;
+	/*min-width:20px;*/
+}
+table.numberList td {
+	border:none;
+}
+table.phoneNumberSelect  tr:not(.tableBody),
+table.numberList tr {
+	height:20px;
+}
+table.phoneNumberSelect tr.tableBody, td.tableBody {
+	padding:0px;
+	vertical-align:top;
+}
+.phoneQA table.phoneNumberSelect td.selector {width:20px;}
+.phoneQA table.phoneNumberSelect td.number {width:120px;}
+.phoneQA table.phoneNumberSelect td.ext {width:40px;}
+.phoneQA table.phoneNumberSelect td.note {width:170px;}
+.phoneQA table.phoneNumberSelect td.contact {width:80px;}
+.phoneQA table.phoneNumberSelect td.company {width:80px;}
+.phoneQA table.phoneNumberSelect td.location {width:80px;}
+
+.phoneQA table.phoneNumberSelect td.selector, 
+.phoneQA table.phoneNumberSelect td.number, 
+.phoneQA table.phoneNumberSelect td.ext, 
+.phoneQA table.phoneNumberSelect td.note, 
+.phoneQA table.phoneNumberSelect td.contact, 
+.phoneQA table.phoneNumberSelect td.company, 
+.phoneQA table.phoneNumberSelect td.location {padding:0px;} 
+
+.phoneQA table.phoneNumberSelect input[type=text] {
+	height:100%;
+	width:100%;
+	border:none;
+	background:none;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+}
+.phoneEventNoteWrapper {
+	width:150px;
+	float:left;
+}
+.phoneQA textarea {
+	height:100%;
+	width:100%;
+	max-height:150px;
+	max-width:200px;
+	resize:none;
+	float:left;
+}
+
+.phoneEventInfo {
+	width:150px;
+	float:right;
+}
+table#phoneEventInfo {
+	position:relative;
+	width:450px;
+}
+.phoneEventInfo label,
+.phoneEventInfo input,
+.phoneEventInfo div {
+	display:block;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	float:right;
+	width:140px;
+	padding:5px;
+}

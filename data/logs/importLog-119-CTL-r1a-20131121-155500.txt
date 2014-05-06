@@ -1,0 +1,4 @@
+2013-11-21 15:55:00,SUCCESS,createImportSession,start_dt=2013-11-21 15:55:00,user=549359_ametrix,client_ID=CTL,reportType=r1a
+2013-11-21 15:55:01,reportType = r1a
+2013-11-21 15:55:01,
+2013-11-21 15:55:01,

@@ -1,0 +1,30 @@
+Ametrix Data Import Session Log
+Import Session ID:     340
+Session Start:         2013-12-05 13:11:33
+User:                  549359_ametrix
+Client ID:             CTL
+Source Data Type:      r4a
+
+2013-12-05 13:11:33,1,Ametrix Data Import Session initialized successfully. Import Session ID 340,4,340,885600
+2013-12-05 13:11:33,2,Source Data File uploaded and saved successfully.,4,-1,885968
+2013-12-05 13:11:34,3,Ametrix Universal Data Processor initialized successfully.,4,-1,1353960
+2013-12-05 13:11:43,4,Data Verification Fail: Source Data File contains unexpected number of columns. Check Source Data.,2,214981,6921976
+2013-12-05 13:11:43,5,Connection to Ametrix Database established successfully.,4,-1,6921928
+2013-12-05 13:11:43,6,Analyzing Source Data and converting to Ametrix format: 0%,1,0,6950008
+2013-12-05 13:11:53,6,Analyzing Source Data and converting to Ametrix format: 50000%,1,50000,37144200
+2013-12-05 13:11:54,6,Analyzing Source Data and converting to Ametrix format: 100000%,1,100000,37144176
+2013-12-05 13:11:54,6,Analyzing Source Data and converting to Ametrix format: 150000%,1,150000,37144192
+2013-12-05 13:11:55,6,Analyzing Source Data and converting to Ametrix format: 200000%,1,200000,37144200
+2013-12-05 13:11:55,6,Analyzing Source Data and converting to Ametrix format: 250000%,1,250000,37144184
+2013-12-05 13:11:56,6,Analyzing Source Data and converting to Ametrix format: 300000%,1,300000,37144184
+2013-12-05 13:11:57,6,Analyzing Source Data and converting to Ametrix format: 350000%,1,350000,37144192
+2013-12-05 13:11:57,6,Analyzing Source Data and converting to Ametrix format: 400000%,1,400000,37144200
+2013-12-05 13:11:57,6,Source Data converted to Ametrix format successfully.,4,-1,10804768
+2013-12-05 13:11:57,6,Report: Total Source Data Rows with Data Conversion Warnings: 0,5,0,10804984
+2013-12-05 13:11:57,7,Data Verification Fail: Converted Data contains unexpected number of rows.,2,4095,10805576
+2013-12-05 13:11:57,8,Ametrix Duplicate Data Protection: Checking Converted Data against existing Ametrix Data.,1, Check Method = Normal,10805808
+2013-12-05 13:12:14,8,Ametrix Duplicate Data Protection Complete.,4,-1,10807232
+2013-12-05 13:12:14,8,REPORT: Duplicate Check Method: normal,5,normal,10807448
+2013-12-05 13:12:14,8,REPORT: Number of Duplicate Rows Removed: 4095,5,4095,10807344
+2013-12-05 13:12:14,9,Final Row Count Verification Fail: Unexpected number of Rows.,2,-1,10807776
+2013-12-05 13:12:14,99,Ametrix Data Import Session Aborted Successfully at Step 9.,4,9,10807848

@@ -1,0 +1,18 @@
+Ametrix Data Import Session Log
+Import Session ID:     302
+Session Start:         2013-12-03 16:01:41
+User:                  549359_ametrix
+Client ID:             CTL
+Source Data Type:      r4b
+
+2013-12-03 16:01:41,1,Ametrix Data Import Session initialized successfully. Import Session ID 302,4,302,833640
+2013-12-03 16:01:41,2,Source Data File uploaded and saved successfully.,4,-1,834192
+2013-12-03 16:01:41,3,Ametrix Universal Data Processor initialized successfully.,4,-1,983784
+2013-12-03 16:01:41,4,Data Verification Success: Source Data File contains expected number of columns (13).,4,13,1236400
+2013-12-03 16:01:41,5,Connection to Ametrix Database established successfully.,4,-1,1236400
+2013-12-03 16:01:42,6,Analyzing Source Data and converting to Ametrix format: 0%,1,0,1264416
+2013-12-03 16:01:43,6,Analyzing Source Data and converting to Ametrix format: 87%,1,87,9552112
+2013-12-03 16:01:43,6,Source Data converted to Ametrix format successfully.,4,-1,2731272
+2013-12-03 16:01:43,6,Report: Total Source Data Rows with Data Conversion Warnings: 0,5,0,2731488
+2013-12-03 16:01:43,7,Data Verification Success: Converted Data contains expected number of rows.,4,576,2734912
+DELETE T1 FROM CTL_DAT_r4b_callsMM T1 LEFT JOIN (SELECT call_date, call_time, TFN, location, mass_dma FROM CTL_DAT_r4b_callsMM GROUP BY call_date, call_time, TFN, location, mass_dma HAVING COUNT(*) = 1) T2 ON T1.call_date = T2.call_date AND T1.call_time = T2.call_time AND T1.TFN = T2.TFN AND T1.location = T2.location AND T1.mass_dma = T2.mass_dma WHERE T1.source_flag = "302" AND T2.call_date IS NULL AND T2.call_time IS NULL AND T2.TFN IS NULL AND T2.location IS NULL AND T2.mass_dma IS NULL;
