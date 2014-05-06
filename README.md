@@ -1,9 +1,9 @@
 Synalytic
 =============
 
-Version: 0.1.0
-Pre-release organizational commit
-Author: Ray Sarno
+Version: 0.1.0<br />
+Pre-release organizational commit<br />
+Author: Ray Sarno<br />
 
 INTRODUCTION
 -------------
