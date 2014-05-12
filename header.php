@@ -7,7 +7,7 @@
 		header ( 'Location: index.php' );
 	}
 	else if(isset($_SESSION['user']['ID'])) {
-		require $_SERVER['DOCUMENT_ROOT'] . '/include/common/db.php';
+		require $_SERVER['DOCUMENT_ROOT'] . '/core/init.php';
 	}
 
 	ini_set("error_log", "./php-error-" . getFileName() . ".log");
@@ -18,7 +18,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Media Buy Tracking System</title>
+		<title>Synalytic</title>
 
 		<link href="styles/ametrix-jqui-theme/jquery-ui-1.10.3.custom.css" rel="stylesheet">
 		<link rel="stylesheet" href="styles/style.css" />
@@ -30,9 +30,9 @@
 		<script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
 
         <?php
-	        $pageIncludeFiles = scandir($_SERVER['DOCUMENT_ROOT'] . '/include/page/');
+	        $pageIncludeFiles = scandir($_SERVER['DOCUMENT_ROOT'] . '/content/page-custom/');
 	        if(array_search(getFileName() . '_pageIncludes.php',$pageIncludeFiles) != FALSE) {
-	        	include $_SERVER['DOCUMENT_ROOT'] . '/include/page/' . getFileName() . '_pageIncludes.php';
+	        	include $_SERVER['DOCUMENT_ROOT'] . '/content/page-custom/' . getFileName() . '_pageIncludes.php';
 	        }
         ?>
 	</head>
@@ -40,7 +40,7 @@
 		<header>
         	<div id="titleBar">
                 <img src="../images/logos/acento.png">
-                <h1>Media Buy Tracking System</h1>
+                <h1>Synalytic</h1>
                 
                 <div id="topMenu">
                 	<a class="logOut" href="logout.php">Log out</a>
@@ -70,9 +70,9 @@
             
             <div id="pageBar">
             	<?php
-			        $pageBarFiles = scandir($_SERVER['DOCUMENT_ROOT'] . '/include/pageBar/');
+			        $pageBarFiles = scandir($_SERVER['DOCUMENT_ROOT'] . '/content/page-custom/');
 			        if(array_search('pageBar_' . getFileName() . '.php',$pageBarFiles) != FALSE) {
-			        	include $_SERVER['DOCUMENT_ROOT'] . '/include/pageBar/pageBar_' . getFileName() . '.php';
+			        	include $_SERVER['DOCUMENT_ROOT'] . '/content/page-custom/pageBar_' . getFileName() . '.php';
 			        }
 		        ?>
 			</div>

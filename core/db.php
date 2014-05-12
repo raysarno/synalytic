@@ -1,16 +1,8 @@
 <?php
 
-	$db_conn    = NULL;						//GLOBAL REFERENCE TO THE DATABASE CONNECTION
-
-	//DATABASE INFORMATION
-	$db_host	= "";
-	$db_user	= "";
-	$db_pass	= "";
-	$db_name    = "";
-
-	//IMPORT TABLE NAMES
+	/*/IMPORT TABLE NAMES  //DEV: UPDATE THIS SECTION: GENERALIZE!
 	$db_importSeshTbl = "AMX_IMP_SESH_importSessions";
-	$db_importLogTbl = 'AMX_IMP_LOG_importLogs';
+	$db_importLogTbl = 'AMX_IMP_LOG_importLogs';*/ 
 
 	function db_connection($db_action = "OPEN") {
 		
