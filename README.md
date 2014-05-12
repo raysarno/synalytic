@@ -114,5 +114,11 @@ DIRECTORY INFO
 	</tr>
 </table>
 
-
+SYNALYTIC IN ACTION: SCREENSHOTS FROM PREVIOUS PROJECTS
+-------------
+![alt tag](https://raw.githubusercontent.com/raysarno/synalytic/master/screenshots/Analytics2.jpg)
+![alt tag](https://raw.githubusercontent.com/raysarno/synalytic/master/screenshots/Analytics1.jpg)
+![alt tag](https://raw.githubusercontent.com/raysarno/synalytic/master/screenshots/CRM1.jpg)
+![alt tag](https://raw.githubusercontent.com/raysarno/synalytic/master/screenshots/CRM2.jpg)
+![alt tag](https://raw.githubusercontent.com/raysarno/synalytic/master/screenshots/CRM3.jpg)
 
